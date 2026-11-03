@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="tagline">Lecteur QR</string>
+    <string name="privacy_note">Hors ligne · Aucun pistage</string>
+
+    <!-- Scanner -->
+    <string name="hint_align">Placez le code dans l’arche</string>
+    <string name="cd_viewfinder">Viseur de la caméra</string>
+    <string name="action_torch_on">Allumer la lampe</string>
+    <string name="action_torch_off">Éteindre la lampe</string>
+    <string name="action_gallery">Lire depuis une image</string>
+    <string name="action_language">Langue</string>
+    <string name="language_system">Langue du système</string>
+
+    <!-- Camera states -->
+    <string name="permission_title">La caméra est scellée</string>
+    <string name="permission_rationale">Umbra a besoin de la caméra pour lire les codes QR. Les images sont traitées sur cet appareil et ne le quittent jamais.</string>
+    <string name="permission_grant">Autoriser la caméra</string>
+    <string name="permission_settings">Ouvrir les paramètres</string>
+    <string name="permission_blocked">L’accès à la caméra a été refusé. Vous pouvez l’autoriser dans les paramètres du système.</string>
+    <string name="camera_unavailable_title">Aucune caméra trouvée</string>
+    <string name="camera_unavailable_body">Vous pouvez toujours lire des codes depuis une image.</string>
+    <string name="image_no_code">Aucun code QR trouvé dans cette image.</string>
+    <string name="image_read_failed">Impossible d’ouvrir cette image.</string>
+
+    <!-- Result -->
+    <string name="result_overline">Révélé</string>
+    <string name="type_url">Lien</string>
+    <string name="type_wifi">Réseau Wi-Fi</string>
+    <string name="type_email">E-mail</string>
+    <string name="type_phone">Numéro de téléphone</string>
+    <string name="type_sms">SMS</string>
+    <string name="type_geo">Lieu</string>
+    <string name="type_text">Texte</string>
+
+    <string name="label_domain">Domaine</string>
+    <string name="label_link">Lien complet</string>
+    <string name="label_network">Réseau</string>
+    <string name="label_security">Sécurité</string>
+    <string name="label_password">Mot de passe</string>
+    <string name="label_address">Adresse</string>
+    <string name="label_subject">Objet</string>
+    <string name="label_message">Message</string>
+    <string name="label_number">Numéro</string>
+    <string name="label_coordinates">Coordonnées</string>
+    <string name="label_place">Lieu</string>
+
+    <string name="wifi_open">Aucune (réseau ouvert)</string>
+    <string name="wifi_hidden">Ce réseau est masqué.</string>
+    <string name="secret_masked">••••••••  ·  Touchez pour révéler</string>
+    <string name="secret_hidden_description">Mot de passe masqué. Touchez deux fois pour le révéler.</string>
+
+    <string name="action_copy">Copier</string>
+    <string name="action_share">Partager</string>
+    <string name="action_open_link">Ouvrir le lien</string>
+    <string name="action_send_email">Écrire un e-mail</string>
+    <string name="action_dial">Appeler</string>
+    <string name="action_send_sms">Envoyer un SMS</string>
+    <string name="action_open_map">Ouvrir la carte</string>
+    <string name="action_copy_password">Copier le mot de passe</string>
+    <string name="copied">Copié</string>
+    <string name="no_app">Aucune application de cet appareil ne peut ouvrir ceci.</string>
+    <string name="share_chooser_title">Partager via</string>
+    <string name="clip_label">Code QR lu</string>
+
+    <!-- Link safety -->
+    <string name="warning_title">Réfléchissez avant d’ouvrir</string>
+    <string name="warning_insecure_http">Non chiffré (http) : d’autres personnes sur le réseau peuvent voir ou modifier cette page.</string>
+    <string name="warning_punycode" tools:ignore="TypographyDashes">Le domaine utilise des caractères encodés (xn--) qui peuvent imiter un autre site.</string>
+    <string name="warning_non_ascii">Le domaine contient des caractères inhabituels qui peuvent imiter un autre site.</string>
+    <string name="warning_ip_literal">Le lien pointe vers une adresse IP brute au lieu d’un nom de domaine.</string>
+    <string name="warning_credentials">Le lien cache du texte avant un « @ ». La vraie destination est le domaine affiché ci-dessus.</string>
+
+    <string name="confirm_open_title">Quitter Umbra ?</string>
+    <string name="confirm_open_message">Ce lien s’ouvrira dans votre navigateur. Umbra lui-même ne se connecte jamais à Internet.\n\n%1$s</string>
+    <string name="confirm_open_positive">Ouvrir</string>
+    <string name="cancel">Annuler</string>
+</resources>

@@ -3,7 +3,7 @@
 A gothic, privacy-first QR code reader for Android. It reads codes and stays offline: it has no
 network access, no analytics and no tracking.
 
-Written in Java 21. English and Brazilian Portuguese.
+Written in Java 21. Available in English, Brazilian Portuguese and French.
 
 ## Features
 
@@ -24,7 +24,7 @@ Written in Java 21. English and Brazilian Portuguese.
 
 - **Link safety checks**, done offline: flags plain `http`, raw IP addresses, `xn--` (punycode)
   and non-ASCII domains, and credentials hidden before an `@`.
-- **Per-app language**: pick English, Português (Brasil) or the system default from the app.
+- **Per-app language**: pick English, Português (Brasil), Français or the system default from the app.
 
 ## Privacy
 

@@ -15,6 +15,7 @@
     <string name="language_system">System default</string>
     <string name="language_en" translatable="false">English</string>
     <string name="language_pt_br" translatable="false">Português (Brasil)</string>
+    <string name="language_fr" translatable="false">Français</string>
 
     <!-- Camera states -->
     <string name="permission_title">The camera is sealed</string>

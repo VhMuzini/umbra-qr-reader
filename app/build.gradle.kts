@@ -21,7 +21,7 @@ android {
 
     androidResources {
         // Ship only the languages the app is translated into; drops unused library translations.
-        localeFilters += listOf("en", "pt-rBR")
+        localeFilters += listOf("en", "pt-rBR", "fr")
     }
 
     buildTypes {

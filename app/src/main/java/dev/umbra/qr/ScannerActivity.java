@@ -431,24 +431,34 @@ public final class ScannerActivity extends AppCompatActivity {
         PopupMenu menu = new PopupMenu(this, anchor);
         menu.inflate(R.menu.language);
         String current = AppCompatDelegate.getApplicationLocales().toLanguageTags();
-        int checked =
-                current.startsWith("pt")
-                        ? R.id.language_pt_br
-                        : current.startsWith("en") ? R.id.language_en : R.id.language_system;
+        int checked;
+        if (current.startsWith("pt")) {
+            checked = R.id.language_pt_br;
+        } else if (current.startsWith("fr")) {
+            checked = R.id.language_fr;
+        } else if (current.startsWith("en")) {
+            checked = R.id.language_en;
+        } else {
+            checked = R.id.language_system;
+        }
         menu.getMenu().findItem(checked).setChecked(true);
         menu.setOnMenuItemClickListener(
                 item -> {
-                    int id = item.getItemId();
-                    LocaleListCompat locales =
-                            id == R.id.language_pt_br
-                                    ? LocaleListCompat.forLanguageTags("pt-BR")
-                                    : id == R.id.language_en
-                                            ? LocaleListCompat.forLanguageTags("en")
-                                            : LocaleListCompat.getEmptyLocaleList();
-                    AppCompatDelegate.setApplicationLocales(locales);
+                    AppCompatDelegate.setApplicationLocales(localesFor(item.getItemId()));
                     return true;
                 });
         menu.show();
+    }
+
+    private static LocaleListCompat localesFor(int menuItemId) {
+        if (menuItemId == R.id.language_pt_br) {
+            return LocaleListCompat.forLanguageTags("pt-BR");
+        } else if (menuItemId == R.id.language_fr) {
+            return LocaleListCompat.forLanguageTags("fr");
+        } else if (menuItemId == R.id.language_en) {
+            return LocaleListCompat.forLanguageTags("en");
+        }
+        return LocaleListCompat.getEmptyLocaleList();
     }
 
     // endregion
