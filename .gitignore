@@ -46,3 +46,6 @@ captures/
 # Tooling
 .vexp/
 .kotlin/
+
+# Docker build caches (docker/build.sh)
+.docker-cache/

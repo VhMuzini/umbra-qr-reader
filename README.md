@@ -51,7 +51,24 @@ The only system permission listed is `android.permission.CAMERA`. The
 `dev.umbra.qr.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION` entry is an AndroidX-internal,
 signature-level permission that grants no capabilities.
 
-## Requirements
+## Build with Docker
+
+The only requirement is Docker. No JDK or Android SDK on the host.
+
+```bash
+docker/build.sh                  # tests, lint, debug APK and release APK
+docker/build.sh assembleDebug    # any Gradle tasks
+```
+
+The script builds a toolchain image (`docker/Dockerfile`: JDK 21 and the Android SDK, with the
+command-line tools pinned by checksum), mounts the repository, and runs Gradle as your user. APKs
+land in `app/build/outputs/apk/` as usual, and Gradle caches persist in `.docker-cache/`, so later
+runs are fast.
+
+The image is `linux/amd64` because Android build tools only ship x86_64 Linux binaries; on ARM
+hosts (such as Apple Silicon) Docker emulates it, which is slower.
+
+## Requirements (local build)
 
 - JDK 21 (Gradle runs on it; make sure `JAVA_HOME` points to it)
 - Android SDK with platform 37 (Gradle downloads it if missing and its license is accepted)
