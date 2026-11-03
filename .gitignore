@@ -49,3 +49,6 @@ captures/
 
 # Docker build caches (docker/build.sh)
 .docker-cache/
+
+# Emacs undo-tree history files (.<name>.~undo-tree~)
+*.~undo-tree~
