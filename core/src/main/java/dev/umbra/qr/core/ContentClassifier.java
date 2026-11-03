@@ -186,7 +186,7 @@ public final class ContentClassifier {
                 current.append(c);
             }
         }
-        if (!current.isEmpty()) {
+        if (current.length() > 0) {
             parts.add(current.toString());
         }
         return parts;
