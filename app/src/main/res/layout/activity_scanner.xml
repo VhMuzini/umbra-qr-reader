@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    tools:ignore="MergeRootFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        app:scaleType="fillCenter" />
+
+    <dev.umbra.qr.ui.GothicViewfinderView
+        android:id="@+id/viewfinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/cd_viewfinder" />
+
+    <!-- Shown instead of the camera when it cannot be used. -->
+    <LinearLayout
+        android:id="@+id/state_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/obsidian"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_arch" />
+
+        <TextView
+            android:id="@+id/state_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.Umbra.Title" />
+
+        <TextView
+            android:id="@+id/state_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:maxWidth="360dp"
+            android:textAppearance="@style/TextAppearance.Umbra.Caption" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/state_action"
+            style="@style/Widget.Umbra.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/state_gallery"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/action_gallery"
+            app:icon="@drawable/ic_image"
+            app:iconTint="@color/tarnished_gold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/scrim_top"
+        android:paddingHorizontal="@dimen/gutter"
+        android:paddingTop="12dp"
+        android:paddingBottom="32dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wordmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wordmark"
+                android:textAppearance="@style/TextAppearance.Umbra.Wordmark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tagline"
+                android:textAppearance="@style/TextAppearance.Umbra.Overline" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/language_button"
+            style="@style/Widget.Umbra.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/action_language"
+            android:tooltipText="@string/action_language"
+            app:icon="@drawable/ic_translate" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/scrim_bottom"
+        android:paddingHorizontal="@dimen/gutter"
+        android:paddingTop="40dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/hint_align"
+            android:textAppearance="@style/TextAppearance.Umbra.Caption" />
+
+        <LinearLayout
+            android:id="@+id/controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/torch_button"
+                style="@style/Widget.Umbra.IconButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/action_torch_on"
+                android:tooltipText="@string/action_torch_on"
+                app:icon="@drawable/ic_flash_on" />
+
+            <Space
+                android:id="@+id/torch_spacer"
+                android:layout_width="40dp"
+                android:layout_height="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/gallery_button"
+                style="@style/Widget.Umbra.IconButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/action_gallery"
+                android:tooltipText="@string/action_gallery"
+                app:icon="@drawable/ic_image" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/privacy_note"
+            android:textAppearance="@style/TextAppearance.Umbra.Overline"
+            android:textColor="@color/ash"
+            android:textSize="11sp" />
+    </LinearLayout>
+</FrameLayout>

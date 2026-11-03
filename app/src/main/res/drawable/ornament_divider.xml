@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="160dp"
+    android:height="12dp"
+    android:viewportWidth="160"
+    android:viewportHeight="12">
+    <path
+        android:pathData="M0,6 L66,6 M94,6 L160,6"
+        android:strokeWidth="1"
+        android:strokeColor="@color/tarnished_gold_dim" />
+    <path
+        android:fillColor="@color/tarnished_gold"
+        android:pathData="M70,5h2v2h-2zM88,5h2v2h-2z" />
+    <path
+        android:fillColor="@color/blood_crimson"
+        android:pathData="M80,1 L85,6 L80,11 L75,6 Z" />
+</vector>

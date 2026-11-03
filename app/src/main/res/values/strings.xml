@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Umbra</string>
+    <string name="wordmark" translatable="false">Umbra</string>
+    <string name="tagline">QR Reader</string>
+    <string name="privacy_note">Offline · No tracking</string>
+
+    <!-- Scanner -->
+    <string name="hint_align">Hold the code within the arch</string>
+    <string name="cd_viewfinder">Camera viewfinder</string>
+    <string name="action_torch_on">Turn on light</string>
+    <string name="action_torch_off">Turn off light</string>
+    <string name="action_gallery">Read from image</string>
+    <string name="action_language">Language</string>
+    <string name="language_system">System default</string>
+    <string name="language_en" translatable="false">English</string>
+    <string name="language_pt_br" translatable="false">Português (Brasil)</string>
+
+    <!-- Camera states -->
+    <string name="permission_title">The camera is sealed</string>
+    <string name="permission_rationale">Umbra needs the camera to read QR codes. Images are processed on this device and never leave it.</string>
+    <string name="permission_grant">Allow camera</string>
+    <string name="permission_settings">Open settings</string>
+    <string name="permission_blocked">Camera access was denied. You can allow it in the system settings.</string>
+    <string name="camera_unavailable_title">No camera found</string>
+    <string name="camera_unavailable_body">You can still read codes from an image.</string>
+    <string name="image_no_code">No QR code found in this image.</string>
+    <string name="image_read_failed">Could not open this image.</string>
+
+    <!-- Result -->
+    <string name="result_overline">Revealed</string>
+    <string name="type_url">Link</string>
+    <string name="type_wifi">Wi-Fi network</string>
+    <string name="type_email">E-mail</string>
+    <string name="type_phone">Phone number</string>
+    <string name="type_sms">Text message</string>
+    <string name="type_geo">Location</string>
+    <string name="type_text">Text</string>
+
+    <string name="label_domain">Domain</string>
+    <string name="label_link">Full link</string>
+    <string name="label_network">Network</string>
+    <string name="label_security">Security</string>
+    <string name="label_password">Password</string>
+    <string name="label_address">Address</string>
+    <string name="label_subject">Subject</string>
+    <string name="label_message">Message</string>
+    <string name="label_number">Number</string>
+    <string name="label_coordinates">Coordinates</string>
+    <string name="label_place">Place</string>
+
+    <string name="wifi_open">None (open network)</string>
+    <string name="wifi_hidden">This network is hidden.</string>
+    <string name="secret_masked">••••••••  ·  Tap to reveal</string>
+    <string name="secret_hidden_description">Password hidden. Double-tap to reveal.</string>
+
+    <string name="action_copy">Copy</string>
+    <string name="action_share">Share</string>
+    <string name="action_open_link">Open link</string>
+    <string name="action_send_email">Write e-mail</string>
+    <string name="action_dial">Call</string>
+    <string name="action_send_sms">Send message</string>
+    <string name="action_open_map">Open map</string>
+    <string name="action_copy_password">Copy password</string>
+    <string name="copied">Copied</string>
+    <string name="no_app">No app on this device can open this.</string>
+    <string name="share_chooser_title">Share via</string>
+    <string name="clip_label">Scanned QR code</string>
+
+    <!-- Link safety -->
+    <string name="warning_title">Look twice before opening</string>
+    <string name="warning_insecure_http">Not encrypted (http): others on the network can see or alter this page.</string>
+    <string name="warning_punycode" tools:ignore="TypographyDashes">The domain uses encoded characters (xn--) that can imitate another site.</string>
+    <string name="warning_non_ascii">The domain contains unusual characters that can imitate another site.</string>
+    <string name="warning_ip_literal">The link points to a raw IP address instead of a domain name.</string>
+    <string name="warning_credentials">The link hides text before an “@”. The real destination is the domain shown above.</string>
+
+    <string name="confirm_open_title">Leave Umbra?</string>
+    <string name="confirm_open_message">This link will open in your browser. Umbra itself never connects to the internet.\n\n%1$s</string>
+    <string name="confirm_open_positive">Open</string>
+    <string name="cancel">Cancel</string>
+</resources>

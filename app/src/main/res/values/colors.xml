@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Gothic palette -->
+    <color name="obsidian">#FF0B0A0D</color>
+    <color name="crypt_stone">#FF1A171C</color>
+    <color name="crypt_stone_high">#FF262128</color>
+    <color name="blood_crimson">#FF8E1B2A</color>
+    <color name="ember_crimson">#FFC23347</color>
+    <color name="tarnished_gold">#FFB08D57</color>
+    <color name="tarnished_gold_dim">#FF6E5836</color>
+    <color name="bone">#FFE6DFD0</color>
+    <color name="ash">#FFA59D92</color>
+    <color name="veil">#D90B0A0D</color>
+</resources>

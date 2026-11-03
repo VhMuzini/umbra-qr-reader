@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Umbra" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/blood_crimson</item>
+        <item name="colorOnPrimary">@color/bone</item>
+        <item name="colorPrimaryContainer">@color/blood_crimson</item>
+        <item name="colorOnPrimaryContainer">@color/bone</item>
+        <item name="colorSecondary">@color/tarnished_gold</item>
+        <item name="colorOnSecondary">@color/obsidian</item>
+        <item name="colorTertiary">@color/ember_crimson</item>
+        <item name="colorError">@color/ember_crimson</item>
+        <item name="colorOnError">@color/bone</item>
+        <item name="android:colorBackground">@color/obsidian</item>
+        <item name="colorSurface">@color/crypt_stone</item>
+        <item name="colorSurfaceContainer">@color/crypt_stone</item>
+        <item name="colorSurfaceContainerHigh">@color/crypt_stone_high</item>
+        <item name="colorSurfaceContainerHighest">@color/crypt_stone_high</item>
+        <item name="colorOnSurface">@color/bone</item>
+        <item name="colorOnSurfaceVariant">@color/ash</item>
+        <item name="colorOutline">@color/tarnished_gold_dim</item>
+        <item name="android:windowBackground">@color/obsidian</item>
+        <!--
+            Fonts go through text appearances, not android:fontFamily: a theme-level fontFamily
+            would override every TextView's textAppearance.
+        -->
+        <item name="android:textViewStyle">@style/Widget.Umbra.TextView</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Umbra.M3.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Umbra.M3.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.Umbra.M3.BodySmall</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Umbra.M3.TitleLarge</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Umbra.M3.HeadlineSmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Umbra.M3.LabelLarge</item>
+        <item name="materialButtonStyle">@style/Widget.Umbra.Button</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.Umbra.Button.Outlined</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.Umbra.BottomSheetDialog</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.Umbra.Dialog</item>
+    </style>
+
+    <style name="Widget.Umbra.TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Umbra.Body</item>
+    </style>
+
+    <!-- Material 3 type scale mapped onto the gothic faces (dialogs, menus, snackbars). -->
+    <style name="TextAppearance.Umbra.M3.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:fontFamily">@font/eb_garamond</item>
+        <item name="fontFamily">@font/eb_garamond</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.Umbra.M3.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:fontFamily">@font/eb_garamond</item>
+        <item name="fontFamily">@font/eb_garamond</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TextAppearance.Umbra.M3.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:fontFamily">@font/eb_garamond</item>
+        <item name="fontFamily">@font/eb_garamond</item>
+    </style>
+
+    <style name="TextAppearance.Umbra.M3.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:fontFamily">@font/cinzel</item>
+        <item name="fontFamily">@font/cinzel</item>
+    </style>
+
+    <style name="TextAppearance.Umbra.M3.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:fontFamily">@font/cinzel</item>
+        <item name="fontFamily">@font/cinzel</item>
+    </style>
+
+    <style name="TextAppearance.Umbra.M3.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:fontFamily">@font/cinzel</item>
+        <item name="fontFamily">@font/cinzel</item>
+    </style>
+
+    <!-- Buttons: engraved capitals, sharp corners. -->
+    <style name="Widget.Umbra.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/blood_crimson</item>
+        <item name="android:textColor">@color/bone</item>
+        <item name="android:fontFamily">@font/cinzel</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Umbra.Sharp</item>
+        <item name="strokeColor">@color/tarnished_gold</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="Widget.Umbra.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:fontFamily">@font/cinzel</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textColor">@color/bone</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Umbra.Sharp</item>
+        <item name="strokeColor">@color/tarnished_gold_dim</item>
+    </style>
+
+    <style name="Widget.Umbra.IconButton" parent="Widget.Material3.Button.IconButton.Outlined">
+        <item name="iconTint">@color/tarnished_gold</item>
+        <item name="iconSize">24dp</item>
+        <item name="strokeColor">@color/tarnished_gold_dim</item>
+        <item name="android:minWidth">@dimen/control_size</item>
+        <item name="android:minHeight">@dimen/control_size</item>
+        <item name="android:backgroundTint">@color/veil</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Umbra.Diamond</item>
+    </style>
+
+    <style name="ShapeAppearance.Umbra.Sharp" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">6dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Umbra.Diamond" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">30%</item>
+    </style>
+
+    <!-- Bottom sheet: square stone slab; the layout draws its own gilded border. -->
+    <style name="ThemeOverlay.Umbra.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.Umbra.BottomSheet</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:navigationBarColor">@color/crypt_stone</item>
+    </style>
+
+    <style name="Widget.Umbra.BottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Umbra.Sharp</item>
+    </style>
+
+    <style name="ThemeOverlay.Umbra.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurface">@color/crypt_stone</item>
+        <item name="colorSurfaceContainerHigh">@color/crypt_stone</item>
+        <item name="shapeAppearanceCornerExtraLarge">@style/ShapeAppearance.Umbra.Sharp</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/TextAppearance.Umbra.DialogTitle.Style</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.Umbra.DialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.Umbra.DialogButton</item>
+    </style>
+
+    <style name="TextAppearance.Umbra.DialogTitle.Style" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:fontFamily">@font/cinzel</item>
+        <item name="android:textColor">@color/tarnished_gold</item>
+    </style>
+
+    <style name="Widget.Umbra.DialogButton" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:fontFamily">@font/cinzel</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/bone</item>
+    </style>
+
+    <!-- Text -->
+    <style name="TextAppearance.Umbra.Wordmark" parent="">
+        <item name="android:fontFamily">@font/unifraktur_cook_bold</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/bone</item>
+    </style>
+
+    <style name="TextAppearance.Umbra.Overline" parent="">
+        <item name="android:fontFamily">@font/cinzel</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.25</item>
+        <item name="android:textColor">@color/tarnished_gold</item>
+    </style>
+
+    <style name="TextAppearance.Umbra.Title" parent="">
+        <item name="android:fontFamily">@font/cinzel</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/bone</item>
+    </style>
+
+    <style name="TextAppearance.Umbra.Body" parent="">
+        <item name="android:fontFamily">@font/eb_garamond</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineSpacingMultiplier">1.15</item>
+        <item name="android:textColor">@color/bone</item>
+    </style>
+
+    <style name="TextAppearance.Umbra.Caption" parent="">
+        <item name="android:fontFamily">@font/eb_garamond</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ash</item>
+    </style>
+</resources>

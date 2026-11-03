@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stone slab with a gilded double rule along the top edge. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/crypt_stone" />
+        </shape>
+    </item>
+    <item android:gravity="top|fill_horizontal" android:height="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/tarnished_gold" />
+        </shape>
+    </item>
+    <item android:gravity="top|fill_horizontal" android:height="1dp" android:top="@dimen/rule_gap">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/tarnished_gold_dim" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Finial cross -->
+    <path
+        android:pathData="M54,30.3 L54,20 M50,24 L58,24"
+        android:strokeWidth="2"
+        android:strokeColor="@color/tarnished_gold" />
+    <!-- Outer lancet arch -->
+    <path
+        android:pathData="M38,80 L38,58 A32,32 0 0,1 54,30.3 A32,32 0 0,1 70,58 L70,80 Z"
+        android:strokeWidth="2.5"
+        android:strokeColor="@color/tarnished_gold"
+        android:strokeLineJoin="miter" />
+    <!-- Inner rule -->
+    <path
+        android:pathData="M41.5,77 L41.5,58 A25,25 0 0,1 54,36.4 A25,25 0 0,1 66.5,58 L66.5,77 Z"
+        android:strokeWidth="1"
+        android:strokeColor="@color/tarnished_gold_dim" />
+    <!-- QR finder patterns -->
+    <path
+        android:fillColor="@color/bone"
+        android:fillType="evenOdd"
+        android:pathData="M45,58h8v8h-8zM47,60v4h4v-4zM55,58h8v8h-8zM57,60v4h4v-4zM45,68h8v8h-8zM47,70v4h4v-4z" />
+    <path
+        android:fillColor="@color/blood_crimson"
+        android:pathData="M48,61h2v2h-2zM58,61h2v2h-2zM48,71h2v2h-2zM56,69h3v3h-3zM60,72h3v3h-3z" />
+</vector>
